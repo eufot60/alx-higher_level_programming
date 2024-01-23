@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-add_tuple = __import__('7-add_tuple').add_tuple
-
-tuple_a = (1, 89)
-tuple_b = (88, 11)
-new_tuple = add_tuple(tuple_a, tuple_b)
-print(new_tuple)
-
-print(add_tuple(tuple_a, (1, )))
-print(add_tuple(tuple_a, ()))
-
+def multiple_returns(sentence):
+    if not sentence:
+        sentence = None
+    if sentence:
+        sen_len = len(sentence)
+    else:
+        sen_len = 0
+    return (sen_len, sentence if not sentence else sentence[:1])
