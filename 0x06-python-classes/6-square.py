@@ -3,12 +3,11 @@
 """Define a class Square."""
 
 
-
 class Square:
     """Represent a square."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initilize a new aquare.
+        """Initialize a new square.
 
         Args:
             size (int): The size of the new square.
@@ -16,7 +15,6 @@ class Square:
         """
         self.size = size
         self.position = position
-
 
     @property
     def size(self):
@@ -60,3 +58,4 @@ class Square:
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(0, self.__size)]
             print("")
+
