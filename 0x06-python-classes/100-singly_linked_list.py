@@ -3,9 +3,8 @@
 """Define classes for a singly-linked list."""
 
 
-
 class Node:
-    """Represent a node in a singly-linked list"""
+    """Represent a node in a singly-linked list."""
 
     def __init__(self, data, next_node=None):
         """Initialize a new Node.
@@ -79,3 +78,4 @@ class SinglyLinkedList:
             values.append(str(tmp.data))
             tmp = tmp.next_node
         return ('\n'.join(values))
+
