@@ -3,5 +3,5 @@
 CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
 -- creates a user
 CREATES USER IF NOT EXISTS user_0d_2@localhost IDENTIFIED BY 'user_0d_2_pwd';
--- grants SELECT privileges to a user
+-- grants SELECT PRIVILEGES to a user
 GRANT SELECT ON hbtn_0d_2.* TO user_od_2@localhost;
