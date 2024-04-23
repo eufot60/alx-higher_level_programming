@@ -1,6 +1,5 @@
 #!/usr/bin/node
-
-const addMeMoby = (number, theFunction) => {
+const addMeMaybe = (number, theFunction) => {
   number++;
   thefunction(number);;
 };
