@@ -2,18 +2,23 @@
 
 //Create an instance method called charPrint(c) that prints the rectangle using the character c
 
-const OldSquare = require('./5-square');
+const Rectangle = require('./5-square.js');
 
-module.exports = class Square extends OldSquare {
+module.exports = class Square extends Rectangle {
   constructor (size) {
     super(size, size);
   }
 
-  double () {
-    super.double();
-  }
-
-  charPrint (c = 'X') {
-    super.print(c);
+  charPrint (c) {
+    if (c === undefined) { c = 'X'; }
+    const array = [];
+    for (let i = 0; i < this.width; i++) {
+      for (let j = 0; j < this.width; j++) {
+        array.push(c);
+      }
+      console.log(array.join(''));
+      array.length = 0;
+    }
   }
 };
+
