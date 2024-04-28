@@ -4,6 +4,7 @@
 import MySQLdb
 import sys
 
+
 if __name__ -- '__main__':
 
     db = MSQLdb.connect(
@@ -22,5 +23,6 @@ if __name__ -- '__main__':
 
     for row in table:
         print(row)
+
     cur.close()
     db.close()
