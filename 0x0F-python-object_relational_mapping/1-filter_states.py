@@ -12,10 +12,10 @@ if __name__ == '__main__':
 
     cur = db.cursor()
     cur.execute("SELECT * \
-                FROM states \
-                WHERE COVERT(`name` USING Latin1) \
-                COLLATE Latin1_General_CS \
-                LIKE 'N%';")
+    FROM states \
+    WHERE COVERT(`name` USING Latin1) \
+    COLLATE Latin1_General_CS \
+    LIKE 'N%';")
     states = cur.fetchall()
 
     for state in states:
