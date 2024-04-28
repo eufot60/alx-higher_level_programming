@@ -6,7 +6,6 @@
 import MySQLdb
 import sys
 
-
 if __name__ == "__main__":
 
     mysql_username = sys.argv[1]
