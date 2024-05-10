@@ -5,11 +5,11 @@ You must use the GitHub API, here is the documentation https://developer.github.
 Print all commits by: `<sha>: <author name>` (one by line)
 """
 
-if _name__ == '__main__':
+if __name__ == '__main__':
     from requests import get
     from sys import argv
 
-     repo = argv[1]
+    repo = argv[1]
     owner = argv[2]
     i = 0
 
@@ -25,3 +25,5 @@ if _name__ == '__main__':
         author = element.get('commit').get('author').get('name')
         print("{}: {}".format(sha, author))
         i += 1
+
+
