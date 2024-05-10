@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Please list 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails”
+ Please list 10 commits (from the most recent to oldest) of the repository “rails” by the user “rails”
 """
 from sys import argv
 import requests
